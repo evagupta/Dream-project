@@ -1,0 +1,28 @@
+TASK:
+
+The task was assigned to design an application for the classroom project donation.
+
+Approach Followed:
+1.I have created a Splash which will take us to the MainActivity of the application.
+2.Main Activity is having two components either List OF PROJECTS or the DONORS LIST.
+3.In the List of Projects activity there is a list of all the projects with the key=DONORCHOOSE.
+- If in this the param from server says it needs funding then the Donate button is visible and by clicking on that a person can
+go to the donate activity and see the project name and the ID and can donate by adding the value into it.
+- If a person only wants to view the data then they can go back to listAllProjects and then click on to the project title
+and go to the project detail class.
+4. Further by clicking on to the project URL a user can peep into the webview activity where a webview of the project will be open.
+-There more details of the proposal will be given.
+5.If a user returns to the Main Activity there a user will can go to Donor list there they can check the number of the donors
+for each project.
+
+
+DESIGNS: Resource files are properly managed,activities,listview,adapter and the webview used.
+
+
+
+TEST CASES:
+1.While clicking on the project title the correct project details should navigate.
+2.While searching the list should search the correct results.
+3.Validations should work properly i.e no search on empty field,no donation without empty fields.
+4.Have verified the package name with the Junit.
+5.Have verified the textvalue with the Espresso as espresso is the UI testing library.

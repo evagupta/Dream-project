@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">40sp</dimen>
+    <dimen name="semi_normal">20sp</dimen>
+    <dimen name="list_height">3dp</dimen>
+    <dimen name="normal_text">18sp</dimen>
+    <dimen name="margin_top">03dp</dimen>
+    <dimen name="margin_top_more">08dp</dimen>
+    <dimen name="button_height">30dp</dimen>
+</resources>

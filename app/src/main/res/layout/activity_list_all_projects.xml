@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dreamapplication.ListAllProjects">
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search your value.."
+        android:layout_toLeftOf="@+id/searchBtn"/>
+
+    <Button
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/search"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/txtsearchTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/normal_text"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_below="@+id/et_search"/>
+    <TextView
+        android:id="@+id/txtsearchURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/normal_text"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_below="@+id/txtsearchTerm"/>
+    <TextView
+        android:id="@+id/txttotalprop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/normal_text"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_below="@+id/txtsearchURL"/>
+
+    <ListView
+        android:id="@+id/mProjectListview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txttotalprop"
+        android:dividerHeight="@dimen/list_height"/>
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

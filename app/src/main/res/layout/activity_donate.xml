@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dreamapplication.DonateActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/donor"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_top"/>
+
+    <TextView
+        android:id="@+id/txtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/margin_top_more"
+        android:layout_below="@+id/heading"/>
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_top_more"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/txtId"/>
+
+    <EditText
+        android:id="@+id/et_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter your donation amount"
+        android:layout_marginTop="@dimen/margin_top_more"
+        android:layout_below="@+id/txtTitle"/>
+    <EditText
+        android:id="@+id/et_donarAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Donar Name"
+        android:layout_marginTop="@dimen/margin_top_more"
+        android:layout_below="@+id/et_amount"/>
+
+    <Button
+        android:id="@+id/btn_donate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_top_more"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/Donate"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

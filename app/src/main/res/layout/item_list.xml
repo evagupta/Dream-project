@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/projectTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_text"
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:id="@+id/projectFundingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_text"
+        android:layout_below="@+id/projectTitle"
+        android:textColor="@color/colorPrimary" />
+    <TextView
+        android:id="@+id/projectExpiration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/normal_text"
+        android:layout_below="@+id/projectFundingStatus"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btn_donate"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/Donate"
+        android:visibility="gone"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="@dimen/normal_text"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/projectExpiration"
+        android:background="@color/colorPrimaryDark"/>
+
+</RelativeLayout>
